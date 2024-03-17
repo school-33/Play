@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Школа №33</title>
     <style>
         body {
@@ -12,7 +14,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         header {
             background-color: #d2abff;
@@ -27,7 +29,6 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            height: 100%;
         }
         a {
             margin: 10px;
@@ -39,14 +40,15 @@
             padding: 10px;
             border-radius: 10px;
             transition: transform 0.3s;
+            flex: 1 0 45%; /* Определяем ширину элементов */
+            max-width: 300px; /* Максимальная ширина элементов */
         }
         a:hover {
             transform: scale(1.1);
         }
         a img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+            width: 100%;
+            height: auto;
             border-radius: 10px;
         }
     </style>
@@ -57,18 +59,19 @@
     </header>
     <div>
         <a href="https://school-33.github.io/Ninka/">
-            <img src="T-rex.jpg">
+            <img src="T-rex.jpg" alt="T-Rex">
             <p>Игра "T-Rex"</p>
         </a>
         <a href="https://school-33.github.io/Swetlana/">
-            <img src="FlappyBird.jpg">
+            <img src="FlappyBird.jpg" alt="Flappy Bird">
             <p>Игра "Flappy Bird"</p>
         </a>
         <a href="https://school-33.github.io/Ninka-Galina/">
-            <img src="krestiki-nolici.jpg">
+            <img src="krestiki-nolici.jpg" alt="Крестики-Нолики">
             <p>Игра "Крестики-Нолики"</p>
         </a>
     </div>
 </body>
 </html>
+
 
